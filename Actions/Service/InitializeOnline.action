@@ -1,0 +1,10 @@
+{
+    "Service": "/UI/Services/Northwind.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnSuccess": "/UI/Actions/Service/InitializeOnlineSuccessMessage.action",
+    "OnFailure": "/UI/Actions/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}

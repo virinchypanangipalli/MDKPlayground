@@ -1,0 +1,55 @@
+{
+	"Credential": "cf",
+	"Template": {
+		"Id": "@ext-mdkvsc-npm-dev/generator-mdk",
+		"Name": "Base",
+		"Version": "0.0.1"
+	},
+	"CF": {
+		"Target": "https://api.cf.us10-001.hana.ondemand.com",
+		"Organization": "7f6752cf-d35d-462d-a355-753d26fadce9",
+		"Space": "760aa8e0-71b9-49ec-b846-5948d0be46dd",
+		"Deploy": {
+			"Description": "",
+			"WebClient": {
+				"Runtime": "preview",
+				"URL": "https://mdk-webclient-runtime-preview.cfapps.sap.hana.ondemand.com/preview/"
+			},
+			"Destination": [
+				{
+					"CF": "Northwind",
+					"MDK": "Northwind",
+					"URL": "https://services.odata.org/V2/Northwind/Northwind.svc"
+				}
+			],
+			"Name": "ns.UI",
+			"Version": "1.0.0",
+			"AppRouter": "standalone",
+			"Auth": true
+		}
+	},
+	"MobileService": {
+		"Type": "",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/7f6752cf-d35d-462d-a355-753d26fadce9/space/760aa8e0-71b9-49ec-b846-5948d0be46dd",
+		"AppId": "",
+		"Destination": []
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": ""
+	},
+	"LCAP": {
+		"FullName": "",
+		"Service": [],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+	"Build": {
+		"SourceMap": true,
+		"TSTarget": "es6",
+		"WMF": true
+	}
+}

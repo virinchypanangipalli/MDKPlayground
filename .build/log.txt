@@ -1,0 +1,2 @@
+Pass:
+Generated bundle file /home/user/projects/UI/.build/UI/.build/uploadBundle.zip

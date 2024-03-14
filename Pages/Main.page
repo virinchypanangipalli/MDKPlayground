@@ -1,0 +1,55 @@
+{
+    "Controls": [
+        {
+            "_Name": "SectionedTable0",
+            "_Type": "Control.Type.SectionedTable",
+            "UseHorizontalLayout": true, 
+            "Sections": [
+                {
+                    "_Name": "LeftSection",
+                    "_Type": "Section.Type.FormCell",
+                    "UseStyling": true, 
+                    "StyleClass": "halfWidth", 
+                    "Controls": [
+                        {
+                            "_Type": "Control.Type.FormCell.SimpleProperty",
+                            "Name": "CleaningLocation",
+                            "Caption": "Cleaning Location",
+                            "PlaceHolder": "Enter Cleaning Location",
+                            "Value": "Gosford Yard"
+                        }
+                    ]
+                },
+                {
+                    "_Name": "RightSection",
+                    "_Type": "Section.Type.FormCell",
+                    "UseStyling": true, 
+                    "StyleClass": "halfWidth", 
+                    "Controls": [
+                        {
+                            "_Type": "Control.Type.FormCell.SimpleProperty",
+                            "Name": "SetNumber",
+                            "Caption": "Set Number",
+                            "PlaceHolder": "Enter Set Number",
+                            "Value": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_Name": "Main",
+    "_Type": "Page",
+    "Caption": "Train Cleaning App",
+    "PrefersLargeCaption": true,
+    "Footer": {
+        "_Type": "FooterToolbar",
+        "Buttons": [
+            {
+                "_Type": "FooterToolbarItem",
+                "Caption": "Save",
+                "SystemItem": "Save"
+            }
+        ]
+    }
+}

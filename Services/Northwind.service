@@ -1,0 +1,10 @@
+{
+    "DestinationName": "Northwind",
+    "OfflineEnabled": false,
+    "LanguageURLParam": "",
+    "OnlineOptions": {},
+    "OfflineOptions": {},
+    "PathSuffix": "",
+    "SourceType": "ServiceURL",
+    "ServiceUrl":"https://services.odata.org/V2/Northwind/Northwind.svc"
+}
