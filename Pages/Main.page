@@ -1,122 +1,191 @@
 {
-  "Controls": [
-    {
-      "_Type": "Control.Type.SectionedTable",
-      "_Name": "SectionedTable0",
-      "Sections": [
-        {
-          "_Name": "CleaningLocationAndSetNumberSection",
-          "_Type": "Section.Type.FormCell",
-          "Controls": [
-            {
-              "_Type": "Control.Type.FormCell.SimpleProperty",
-              "_Name": "CleaningLocation",
-              "Caption": "Cleaning Location:",
-              "Value": "GFY",
-              "IsEditable": false
-            },
-            {
-              "_Type": "Control.Type.FormCell.SimpleProperty",
-              "_Name": "SetNumber",
-              "Caption": "Set Number:",
-              "Value": "",
-              "IsEditable": true
-            }
-          ],
-          "Separators": {
-            "BottomSectionSeparator": true
-          }
-        },
-        {
-          "_Name": "ButtonsSection",
-          "_Type": "Section.Type.FormCell",
-          "Controls": [
-            {
-              "_Type": "Control.Type.FormCell.Button",
-              "_Name": "Button1",
-              "Caption": "Button Placeholder 1",
-              "OnPress": "/Path/To/Action/For/Button1"
-            },
-            {
-              "_Type": "Control.Type.FormCell.Button",
-              "_Name": "Button2",
-              "Caption": "Button Placeholder 2",
-              "OnPress": "/Path/To/Action/For/Button2"
-            }
-          ],
-          "Separators": {
-            "BottomSectionSeparator": true
-          }
-        },
-        {
-          "_Name": "FormDetailsSection",
-          "_Type": "Section.Type.FormCell",
-          "Controls": [
-            {
-              "_Type": "Control.Type.FormCell.SimpleProperty",
-              "_Name": "CarNumbers",
-              "Caption": "Car Numbers:",
-              "Value": "",
-              "IsEditable": true
-            },
-            {
-              "_Type": "Control.Type.FormCell.SimpleProperty",
-              "_Name": "CleanType",
-              "Caption": "Clean Type:",
-              "Value": "",
-              "IsEditable": true
-            },
-            {
-              "_Type": "Control.Type.FormCell.ListPicker",
-              "_Name": "NumberOfCleaners",
-              "Caption": "Number of Cleaners:",
-              "Values": ["1", "2", "3", "4", "5"],
-              "Value": "1",
-              "IsEditable": true
-            },
-            {
-              "_Type": "Control.Type.FormCell.ListPicker",
-              "_Name": "CleanedBy",
-              "Caption": "Cleaned by:",
-              "Values": ["Cleaner A", "Cleaner B", "Cleaner C"],
-              "Value": "Cleaner A",
-              "IsEditable": true
-            },
-            {
-              "_Type": "Control.Type.FormCell.DatePicker",
-              "_Name": "CompletionDateAndTime",
-              "Caption": "Completion Date and Time:",
-              "Value": "19.01.2019, 16:37",
-              "IsEditable": true,
-              "Mode": "Datetime"
-            },
-            {
-              "_Type": "Control.Type.FormCell.Note",
-              "_Name": "Comments",
-              "Caption": "Comments:",
-              "Value": "",
-              "IsEditable": true
-            }
-          ],
-          "Separators": {
-            "BottomSectionSeparator": true
-          }
-        }
-      ]
-    }
-  ],
-  "_Type": "Page",
-  "_Name": "Main",
-  "Caption": "Train Cleaning App",
-  "PrefersLargeCaption": true,
-  "Footer": {
-    "_Type": "FooterToolbar",
-    "Buttons": [
-      {
-        "_Type": "FooterToolbarItem",
-        "Caption": "Save",
-        "SystemItem": "Save"
-      }
-    ]
-  }
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "GFY",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "CleaningLocation",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Cleaning Location:",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "SetNumber",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Set Number:",
+							"Enabled": true,
+							"IsEditable": true
+						}
+					],
+					"Separators": {
+						"BottomSectionSeparator": true
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "CleaningLocationAndSetNumberSection"
+				},
+				{
+					"Controls": [
+						{
+							"Caption": "Button Placeholder 1",
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "Button1",
+							"IsVisible": true,
+							"Separator": true,
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://add-activity",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/Path/To/Action/For/Button1"
+						},
+						{
+							"Caption": "Button Placeholder 2",
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "Button2",
+							"IsVisible": true,
+							"Separator": true,
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://edit",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/Path/To/Action/For/Button2"
+						}
+					],
+					"Separators": {
+						"BottomSectionSeparator": true
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "ButtonsSection"
+				},
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "CarNumbers",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Car Numbers:",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "CleanType",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Clean Type:",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Values": [
+								"1",
+								"2",
+								"3",
+								"4",
+								"5"
+							],
+							"Value": "1",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "NumberOfCleaners",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowEmptySelection": true,
+							"Caption": "Number of Cleaners:",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true
+						},
+						{
+							"Values": [
+								"Cleaner A",
+								"Cleaner B",
+								"Cleaner C"
+							],
+							"Value": "Cleaner A",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "CleanedBy",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowEmptySelection": true,
+							"Caption": "Cleaned by:",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true
+						},
+						{
+							"Value": "19.01.2019, 16:37",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "CompletionDateAndTime",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Completion Date and Time:",
+							"IsEditable": true,
+							"Mode": "Datetime"
+						},
+						{
+							"Caption": "Comments:",
+							"_Type": "Control.Type.FormCell.Note",
+							"_Name": "Comments",
+							"IsVisible": true,
+							"Separator": true,
+							"Enabled": true,
+							"IsEditable": true
+						}
+					],
+					"Separators": {
+						"BottomSectionSeparator": true
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "FormDetailsSection"
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"Footer": {
+		"_Type": "FooterToolbar",
+		"Buttons": [
+			{
+				"_Type": "FooterToolbarItem",
+				"Caption": "Save",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Train Cleaning App",
+	"PrefersLargeCaption": true
 }
