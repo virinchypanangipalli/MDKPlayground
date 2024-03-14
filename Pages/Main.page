@@ -5,51 +5,70 @@
       "_Name": "SectionedTable0",
       "Sections": [
         {
+          "_Name": "CleaningLocationAndSetNumberSection",
+          "_Type": "Section.Type.FormCell",
           "Controls": [
             {
               "_Type": "Control.Type.FormCell.SimpleProperty",
-              "_Name": "FormCellSimpleProperty0",
+              "_Name": "CleaningLocation",
               "Caption": "Cleaning Location:",
               "Value": "GFY",
               "IsEditable": false
             },
             {
               "_Type": "Control.Type.FormCell.SimpleProperty",
-              "_Name": "FormCellSimpleProperty1",
+              "_Name": "SetNumber",
               "Caption": "Set Number:",
               "Value": "",
               "IsEditable": true
             }
           ],
-          "_Type": "Section.Type.FormCell",
-          "_Name": "CleaningLocationAndSetNumberSection",
           "Separators": {
-            "TopSectionSeparator": false,
-            "BottomSectionSeparator": true,
-            "HeaderSeparator": true,
-            "FooterSeparator": true,
-            "ControlSeparator": true
+            "BottomSectionSeparator": true
           }
         },
         {
+          "_Name": "ButtonsSection",
+          "_Type": "Section.Type.FormCell",
+          "Controls": [
+            {
+              "_Type": "Control.Type.FormCell.Button",
+              "_Name": "Button1",
+              "Caption": "Button Placeholder 1",
+              "OnPress": "/Path/To/Action/For/Button1"
+            },
+            {
+              "_Type": "Control.Type.FormCell.Button",
+              "_Name": "Button2",
+              "Caption": "Button Placeholder 2",
+              "OnPress": "/Path/To/Action/For/Button2"
+            }
+          ],
+          "Separators": {
+            "BottomSectionSeparator": true
+          }
+        },
+        {
+          "_Name": "FormDetailsSection",
+          "_Type": "Section.Type.FormCell",
           "Controls": [
             {
               "_Type": "Control.Type.FormCell.SimpleProperty",
-              "_Name": "FormCellSimpleProperty2",
+              "_Name": "CarNumbers",
               "Caption": "Car Numbers:",
               "Value": "",
               "IsEditable": true
             },
             {
               "_Type": "Control.Type.FormCell.SimpleProperty",
-              "_Name": "FormCellSimpleProperty3",
+              "_Name": "CleanType",
               "Caption": "Clean Type:",
               "Value": "",
               "IsEditable": true
             },
             {
               "_Type": "Control.Type.FormCell.ListPicker",
-              "_Name": "FormCellListPicker0",
+              "_Name": "NumberOfCleaners",
               "Caption": "Number of Cleaners:",
               "Values": ["1", "2", "3", "4", "5"],
               "Value": "1",
@@ -57,7 +76,7 @@
             },
             {
               "_Type": "Control.Type.FormCell.ListPicker",
-              "_Name": "FormCellListPicker1",
+              "_Name": "CleanedBy",
               "Caption": "Cleaned by:",
               "Values": ["Cleaner A", "Cleaner B", "Cleaner C"],
               "Value": "Cleaner A",
@@ -65,7 +84,7 @@
             },
             {
               "_Type": "Control.Type.FormCell.DatePicker",
-              "_Name": "FormCellDatePicker0",
+              "_Name": "CompletionDateAndTime",
               "Caption": "Completion Date and Time:",
               "Value": "19.01.2019, 16:37",
               "IsEditable": true,
@@ -73,20 +92,14 @@
             },
             {
               "_Type": "Control.Type.FormCell.Note",
-              "_Name": "FormCellNote0",
+              "_Name": "Comments",
               "Caption": "Comments:",
               "Value": "",
               "IsEditable": true
             }
           ],
-          "_Type": "Section.Type.FormCell",
-          "_Name": "FormDetailsSection",
           "Separators": {
-            "TopSectionSeparator": false,
-            "BottomSectionSeparator": true,
-            "HeaderSeparator": true,
-            "FooterSeparator": true,
-            "ControlSeparator": true
+            "BottomSectionSeparator": true
           }
         }
       ]
