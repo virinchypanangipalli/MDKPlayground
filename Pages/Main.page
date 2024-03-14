@@ -3,34 +3,65 @@
         {
             "_Name": "SectionedTable0",
             "_Type": "Control.Type.SectionedTable",
-            "UseHorizontalLayout": true, 
             "Sections": [
                 {
-                    "_Name": "LeftSection",
+                    "_Name": "Section1",
                     "_Type": "Section.Type.FormCell",
-                    "UseStyling": true, 
-                    "StyleClass": "halfWidth", 
+                    "Caption": "Train Cleaning App",
                     "Controls": [
                         {
                             "_Type": "Control.Type.FormCell.SimpleProperty",
                             "Name": "CleaningLocation",
                             "Caption": "Cleaning Location",
                             "PlaceHolder": "Enter Cleaning Location",
-                            "Value": "Gosford  Yard"
-                        }
-                    ]
-                },
-                {
-                    "_Name": "RightSection",
-                    "_Type": "Section.Type.FormCell",
-                    "UseStyling": true, 
-                    "StyleClass": "halfWidth", 
-                    "Controls": [
+                            "Value": "Gosford Yard"
+                        },
                         {
                             "_Type": "Control.Type.FormCell.SimpleProperty",
                             "Name": "SetNumber",
                             "Caption": "Set Number",
                             "PlaceHolder": "Enter Set Number",
+                            "Value": ""
+                        },
+                        {
+                            "_Type": "Control.Type.FormCell.SimpleProperty",
+                            "Name": "CarNumbers",
+                            "Caption": "Car Numbers",
+                            "PlaceHolder": "Enter Car Numbers",
+                            "Value": ""
+                        },
+                        {
+                            "_Type": "Control.Type.FormCell.SimpleProperty",
+                            "Name": "CleanType",
+                            "Caption": "Clean Type",
+                            "PlaceHolder": "Enter Clean Type",
+                            "Value": ""
+                        },
+                        {
+                            "_Type": "Control.Type.FormCell.ListPicker",
+                            "Name": "NumberOfCleaners",
+                            "Caption": "Number of Cleaners",
+                            "Values": ["1", "2", "3", "4", "5"],
+                            "Value": "1"
+                        },
+                        {
+                            "_Type": "Control.Type.FormCell.ListPicker",
+                            "Name": "CleanedBy",
+                            "Caption": "Cleaned by",
+                            "Values": ["Cleaner A", "Cleaner B", "Cleaner C"],
+                            "Value": "Cleaner A"
+                        },
+                        {
+                            "_Type": "Control.Type.FormCell.DatePicker",
+                            "Name": "CompletionDateAndTime",
+                            "Caption": "Completion Date and Time",
+                            "Value": "2024-03-15T14:00:00Z"
+                        },
+                        {
+                            "_Type": "Control.Type.FormCell.Note",
+                            "Name": "Comments",
+                            "Caption": "Comments",
+                            "PlaceHolder": "Add comments",
                             "Value": ""
                         }
                     ]
@@ -42,6 +73,7 @@
     "_Type": "Page",
     "Caption": "Train Cleaning App",
     "PrefersLargeCaption": true,
+  
     "Footer": {
         "_Type": "FooterToolbar",
         "Buttons": [
