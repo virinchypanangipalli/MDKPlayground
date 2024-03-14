@@ -50,7 +50,7 @@
 							"Image": "sap-icon://add-activity",
 							"ImagePosition": "Leading",
 							"Enabled": true,
-							"OnPress": "/Path/To/Action/For/Button1"
+							"OnPress": ""
 						},
 						{
 							"Caption": "Button Placeholder 2",
@@ -64,7 +64,7 @@
 							"Image": "sap-icon://edit",
 							"ImagePosition": "Leading",
 							"Enabled": true,
-							"OnPress": "/Path/To/Action/For/Button2"
+							"OnPress": ""
 						}
 					],
 					"Separators": {
