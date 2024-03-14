@@ -26,12 +26,16 @@
 							"IsEditable": true
 						}
 					],
-					"Separators": {
-						"BottomSectionSeparator": true
-					},
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
 					},
 					"_Type": "Section.Type.FormCell",
 					"_Name": "CleaningLocationAndSetNumberSection"
@@ -40,6 +44,7 @@
 					"Controls": [
 						{
 							"Caption": "Button Placeholder 1",
+							"Icon": "sap-icon://add-activity",
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "Button1",
 							"IsVisible": true,
@@ -47,13 +52,13 @@
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
-							"Image": "sap-icon://add-activity",
+							"Image": "sap-icon://add-product",
 							"ImagePosition": "Leading",
-							"Enabled": true,
-							"OnPress": ""
+							"Enabled": true
 						},
 						{
 							"Caption": "Button Placeholder 2",
+							"Icon": "sap-icon://edit",
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "Button2",
 							"IsVisible": true,
@@ -61,18 +66,21 @@
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
-							"Image": "sap-icon://edit",
+							"Image": "sap-icon://edit-outside",
 							"ImagePosition": "Leading",
-							"Enabled": true,
-							"OnPress": ""
+							"Enabled": true
 						}
 					],
-					"Separators": {
-						"BottomSectionSeparator": true
-					},
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
 					},
 					"_Type": "Section.Type.FormCell",
 					"_Name": "ButtonsSection"
@@ -157,12 +165,16 @@
 							"IsEditable": true
 						}
 					],
-					"Separators": {
-						"BottomSectionSeparator": true
-					},
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
 					},
 					"_Type": "Section.Type.FormCell",
 					"_Name": "FormDetailsSection"
